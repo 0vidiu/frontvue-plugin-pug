@@ -1,0 +1,36 @@
+//-
+  Name: global | head.pug
+  Description: HTML HEAD global partial
+  Author: Ovidiu Barabula <lectii2008@gmail.com>
+  @since 1.0.0
+
+head
+  //- Do not place anything above these two meta tags
+  meta(charset="utf-8")
+  meta(http-equiv="x-ua-compatible" content="ie=edge")
+
+  title fv. Pug plugin
+  meta(name="description" content="")
+  meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+
+  //- The theme color will determine the color of the (supported) browser tabs on mobile devices
+  meta(name="theme-color" content="#4285f4")
+
+  //- Set your own Content-Security-Policy here
+  meta(http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com")
+
+  //- Author meta data
+  include meta-author.pug
+
+  //- Social network meta information
+  include meta-facebook.pug
+  include meta-twitter.pug
+
+  //- Icons
+  include meta-icons.pug
+
+  //- Assets prefetching
+  include head-prefetch.pug
+
+  //- Styles
+  include head-styles.pug

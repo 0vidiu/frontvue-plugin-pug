@@ -1,0 +1,168 @@
+//-
+  Name: global | head-styles.pug
+  Description: Style assets
+  Author: Ovidiu Barabula <lectii2008@gmail.com>
+  @since 1.0.0
+
+//- Link your stylesheets here
+//- link(rel="stylesheet" href="../css/app.css")
+
+//- Link your external stylesheets here
+link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400i,900,900i")
+
+//- Add your embedded stylesheets here
+//- You can remove everything below this line when starting a new project
+style(type="text/css").
+  /**
+   * Layout
+   */
+
+  body {
+    margin: 0;
+  }
+
+  .header,
+  .main,
+  .footer {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .main {
+    box-sizing: border-box;
+    padding: 48px 48px 72px;
+  }
+
+  .main::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .main__heading em {
+    font-weight: 400;
+  }
+
+  .main__content.has-sidebar {
+    float: left;
+    width: 60%;
+  }
+
+  .main__content::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .sidebar {
+    box-sizing: border-box;
+    float: left;
+    width: 40%;
+    padding-left: 48px;
+  }
+
+  .sidebar::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+  /**
+   * Logo
+   */
+
+  .header__logo {
+    margin: 24px 0;
+    color: #97B1DF;
+    font-size: 36px;
+    font-weight: 900;
+    font-style: italic;
+  }
+
+
+  /**
+   * Navigation
+   */
+
+  .nav::before,
+  .nav::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: #F0F0F0;
+  }
+
+  .nav::after {
+    height: 3px;
+  }
+
+  .nav__list {
+    display: flex;
+    justify-content: center;
+    margin: 12px 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .nav__item {
+    padding: 0 24px;
+  }
+
+  .nav__item.-type-separator {
+    padding: 0;
+  }
+
+  .nav__item.-type-separator::before {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 100%;
+    background-color: #F0F0F0;
+  }
+
+  .nav__link {
+    display: inline-block;
+    color: #333333;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+
+  /**
+   * Footer
+   */
+
+  .footer::before {
+    content: "";
+    display: block;
+    height: 3px;
+    background-color: #F0F0F0;
+  }
+
+  .footer .copyright {
+    display: block;
+    padding: 12px 0;
+    font-size: 12px;
+  }
+
+
+  /**
+   * Typography
+   */
+
+  html {
+    font-family: Lato, sans-serif;
+  }
+
+  p {
+    margin: 0 0 24px;
+    line-height: 24px;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 24px;
+  }

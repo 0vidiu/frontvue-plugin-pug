@@ -1,0 +1,24 @@
+//-
+  Name: partials | nav.pug
+  Description: Page header
+  Author: Ovidiu Barabula <lectii2008@gmail.com>
+  @since 1.0.0
+
+//- Static links array
+-
+  var navLinks = [
+    { label: "Home", url: "index.html" },
+    { label: "Blog", url: "404.html" },
+    { label: "About", url: "404.html" },
+    { label: "Contact", url: "404.html" }
+  ];
+
+nav.header__nav.nav
+  ul.nav__list
+    //- Generate navigation links from the above array
+    each link, index in navLinks
+      li.nav__item
+        a.nav__link(href=link.url) #{link.label}
+      //- Add link separator for each link, except last one
+      if index < navLinks.length - 1
+        li.nav__item.-type-separator

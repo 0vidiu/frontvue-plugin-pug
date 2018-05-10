@@ -1,0 +1,17 @@
+//-
+  Name: views | index.pug
+  Description: Homepage view
+  Author: Ovidiu Barabula <lectii2008@gmail.com>
+  @since 1.0.0
+
+extends layouts/default.pug
+
+block content
+  include partials/header.pug
+  main.main
+    h1.main__heading @frontvue<em>/plugin-pug</em>
+    .main__content.has-sidebar
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum vehicula arcu a aliquam. Suspendisse at interdum mauris, sit amet bibendum ipsum. In ullamcorper dolor eget urna facilisis, sit amet fermentum ex ultricies. Praesent sit amet elementum erat. Nulla tempor diam nulla, ac vestibulum justo dignissim et. Nullam sit amet eros hendrerit, ornare felis sed, fringilla felis. Duis vestibulum accumsan dictum. Donec fringilla faucibus metus non tempus. Nunc ornare egestas eros, id ornare magna hendrerit quis. Fusce bibendum scelerisque urna vel facilisis. Donec blandit congue lorem vel pellentesque. Duis sodales lectus id magna sagittis, id efficitur magna varius.
+      p Mauris nec libero non nibh venenatis faucibus eu non orci. Donec eu elit malesuada, vulputate leo at, semper nulla. Vivamus sit amet eros enim. Pellentesque id urna convallis, dapibus leo eu, tincidunt dui. Duis ac egestas leo, in euismod augue. Maecenas eget orci non nunc dignissim tempor luctus at neque. Proin varius leo nisl, eu scelerisque massa vehicula bibendum. Nunc interdum malesuada tellus vel sollicitudin. Sed sed ligula quis metus luctus accumsan. Vestibulum dictum mi velit, vel laoreet arcu condimentum sit amet. Aliquam erat volutpat. Proin neque ligula, volutpat nec diam ac, malesuada malesuada sapien. Ut volutpat enim eu elementum efficitur.
+
+    include partials/sidebar.pug

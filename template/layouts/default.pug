@@ -1,0 +1,14 @@
+//-
+  Name: layouts | default.pug
+  Description: Default page layout
+  Author: Ovidiu Barabula <lectii2008@gmail.com>
+  @since 1.0.0
+
+doctype html
+html(class="no-js" lang="en")
+  include ../global/head.pug
+
+  body
+    block content
+    include ../global/footer.pug
+    include ../global/footer-scripts.pug

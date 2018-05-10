@@ -1,0 +1,42 @@
+{
+  "disallowBlockExpansion": true,
+  "disallowClassAttributeWithStaticValue": true,
+  "disallowClassLiteralsBeforeIdLiterals": true,
+  "disallowDuplicateAttributes": true,
+  "disallowIdAttributeWithStaticValue": true,
+  "disallowLegacyMixinCall": true,
+  "disallowMultipleLineBreaks": true,
+  "disallowSpaceAfterCodeOperator": true,
+  "disallowSpacesInsideAttributeBrackets": true,
+  "disallowSpecificTags": [
+	  "b",
+	  "i"
+  ],
+  "disallowTagInterpolation": true,
+  "disallowTrailingSpaces": true,
+  "maximumNumberOfLines": 500,
+  "requireClassLiteralsBeforeAttributes": true,
+  "requireClassLiteralsBeforeIdLiterals": false,
+  "requireIdLiteralsBeforeAttributes": true,
+  "requireLineFeedAtFileEnd": true,
+  "requireLowerCaseAttributes": true,
+  "requireLowerCaseTags": true,
+  "requireSpacesInsideAttributeBrackets": false,
+  "requireSpacesInsideAttributeBrackets": [
+	  {
+		  "img": [ "alt" ]
+	  }
+  ],
+  "requireStrictEqualityOperators": true,
+  "validateAttributeQuoteMarks": "\"",
+  "validateAttributeSeparator": {
+	  "separator": " ",
+	  "multiLineSeparator": "\n "
+  },
+  "validateDivTags": true,
+  "validateExtensions": true,
+  "validateIndentation": 2,
+  "validateLineBreaks": "LF",
+  "validateSelfClosingTags": true,
+  "validateTemplateString": true
+}
